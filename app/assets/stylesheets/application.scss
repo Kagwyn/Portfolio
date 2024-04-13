@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+.navbar {
+    background-color: #070F2B;
+}
+
 .navbar-brand,
 .nav-link {
     color: #9290C3;
@@ -32,6 +36,10 @@ h3 {
 
 .about-list li {
     margin-top: 50px;
+}
+
+.work-list li {
+    margin-top: 25px;
 }
 
 img {

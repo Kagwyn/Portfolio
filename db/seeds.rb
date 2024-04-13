@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+work1 = Work.create!(
+    title: "Partslingers",
+    description: "Partslingers was a project I worked on for COMP 4081. The goal of this project was to create a convincing webapp that simulates a website to purchase PC parts. It included functionality for:",
+    list: ["Searching", "Browsing parts", "Adding to cart", "Checkout", "Bundles", "GPU comparison", "Part checklist", "Wattage calculator"]
+)
+work1.picture.attach(io: File.open("app/assets/images/partslingers.png"), filename: "partslingers.png")
+
+work2 = Work.create!(
+    title: "Checkers",
+    description: "Checkers was a project I worked on for COMP 3150. The graphics for this game was achieved using SFML, a graphics library. It was coded in C++ using class-based methods. These methods included:",
+    list: ["Setting up the board", "Drawing the board", "Drawing the pieces", "Searching the pieces", "Changing the turn", "Eliminating pieces", "Determining possible moves"]
+)
+work2.picture.attach(io: File.open("app/assets/images/checkers.png"), filename: "checkers.png")
+
+work3 = Work.create!(
+    title: "Stable Diffusion Model",
+    description: "The Stable Diffusion Model is a project I worked on for COMP 4745. The goal of it was to create a model that can generate images of a character using Artificial Intelligence. The full process was documented on Google Colab:",
+    link: "https://colab.research.google.com/drive/11rwVXAa7EIwKRwBcET8BjmC4CDho8hn9?usp=sharing"
+)
+work3.picture.attach(io: File.open("app/assets/images/bobblehead.png"), filename: "bobblehead.png")
