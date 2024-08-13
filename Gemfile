@@ -72,3 +72,8 @@ group :test do
 end
 
 gem "bootstrap", "~> 5.2.3"
+gem "dockerfile-rails", ">= 1.6", :group => :development
+
+gem "pg", "~> 1.5"
+
+gem "aws-sdk-s3", "~> 1.157", :require => false
