@@ -1,0 +1,17 @@
+<p>Hi <%= @contact_info.fname %>,</p>
+
+<p>Thank you for reaching out to me!</p>
+
+<p>Provided information:</p>
+  <ul>
+    <li><strong>First Name:</strong> <%= @contact_info.fname %></li>
+    <li><strong>Last Name:</strong> <%= @contact_info.lname %></li>
+    <li><strong>Email:</strong> <%= @contact_info.email %></li>
+    <li><strong>Phone Number:</strong> <%= @contact_info.phone %></li>
+    <li><strong>Message:</strong> <%= @contact_info.message %></li>
+  </ul>
+
+<p>If there is anything else, you can reply to this email or fill out the contact form again over at <%= link_to "portfolio.kagwyn.com", "https://portfolio.kagwyn.com" %>.</p>
+
+<p>Best,<br>
+Kaleb Gwyn</p>
