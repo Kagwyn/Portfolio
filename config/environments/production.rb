@@ -94,7 +94,7 @@ Rails.application.configure do
   # Action Mailer
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:         'smtp.gmail.com',
+    address:         'smtp.zoho.com',
     port:            587,
     user_name:       ENV['EMAIL'],
     password:        ENV['EMAIL_PASSWORD'],
