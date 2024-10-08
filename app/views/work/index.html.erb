@@ -1,14 +1,11 @@
-<h1 class="text-center">Portfolio:</h1>
+<h1>Portfolio:</h1>
 
 <% @works.each do |work| %>
     <div class="row">
-        <div class="col-4"></div>
+        <h3 style="margin-top:50px"><%= work.title %></h3>
 
-        <div class="col-4">
-            <h3 class="text-center"><%= work.title %></h3>
-            <%= link_to (image_tag work.picture, class: "lower-opacity"), work_path(work) %>
-        </div>
-
-        <div class="col-4"></div>
+        <%= link_to (image_tag work.picture, class: "lower-opacity mx-auto d-block"), work_path(work) %>
+        
+        <p style="text-align:center">Click image to view more</p>
     </div>
 <% end %>

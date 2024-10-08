@@ -5,6 +5,7 @@ class CreateWorks < ActiveRecord::Migration[7.0]
       t.text :description
       t.text :list
       t.string :link
+      t.string :github
 
       t.timestamps
     end
